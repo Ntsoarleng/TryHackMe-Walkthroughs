@@ -10,7 +10,7 @@ Command used:
 ```bash
 nmap -p- --open <target-IP>
 ```
-Findings: 
+Findings:
 The scan revealed the following three open ports,
 1. 22/tcp (ssh)
 2. 139/tcp (netbios-ssn)
