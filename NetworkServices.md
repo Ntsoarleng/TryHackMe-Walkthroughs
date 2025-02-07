@@ -1,10 +1,9 @@
 # TryHackMe Walkthrough: Network Services
-📅 Date: YYYY-MM-DD  
-🔍 Difficulty Level: Easy / Medium / Hard  
-🖥️ Category: Windows/Linux, Forensics, Web Exploitation, etc.  
-🎯 Objective: Gain user and root access  
+📅 Date: 2025-02-04  
+🔍 Difficulty Level: Easy 
+🖥️ Category: Enumeration, Exploitation.  
+🎯 Objective: Learn about, then enumerate and exploit a variety of network services and misconfigurations.
 
----
-🛠1️⃣ Enumeration
+🛠1️⃣ Enumerating SMB
 ### 🔎 **Network Scanning**
 Command used:  
