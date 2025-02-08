@@ -49,4 +49,7 @@ Why?
 3. Profiles usually store user data, which when misconfigured, can contain credentials or sensitive files.
 
 
+## 📂2️⃣ **Exploiting SMB**
+
+
 
