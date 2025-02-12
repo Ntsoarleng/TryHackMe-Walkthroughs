@@ -49,6 +49,7 @@ Why?
 3. Profiles usually store user data, which when misconfigured, can contain credentials or sensitive files.
 
 
+
 ## 📂2️⃣ **Exploiting SMB**
 
 We're going to be exploiting anonymous SMB share access- a common misconfiguration that can allow us to gain information that will lead to a shell. 
