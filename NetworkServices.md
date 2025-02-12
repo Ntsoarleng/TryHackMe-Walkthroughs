@@ -66,7 +66,7 @@ The share allows for anonymous access without providing a password. I also used 
 
 ![Screenshot (58)](https://github.com/user-attachments/assets/cd4f49c6-ca0b-4976-93ed-5355e41580a5)
 
-The "Working From Hoome Information.txt" is the document that appeared interesting and took a look at it by using the command below:
+The "Working From Home Information.txt" is the document that appeared interesting and took a look into it by using the command below:
 
 ```bash
 smb: \> more "Working From Home Information.txt"
@@ -74,7 +74,7 @@ smb: \> more "Working From Home Information.txt"
 
 ![Screenshot (57)](https://github.com/user-attachments/assets/d40f3292-be0d-407a-9d9d-42816e346d1d)
 
-We can assume that this profile folder belongs to John Cactus. The ssh service has been configured to allow him to work from home meaning that the directory in the share that we should look in is .ssh.
+We can assume that this profile folder belongs to John Cactus. The ssh service has been configured to allow him to work from home meaning that the directory in the share that we should look into is .ssh.
 
 The .ssh directory has a directory that contains authentication keys that allow a user to authenticate themselves on, and access a server. Of these keys, the one that is most useful to us is: id_rsa
 
