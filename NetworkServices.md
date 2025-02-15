@@ -114,7 +114,7 @@ After working out the username of the account, I entered the command below to di
 ssh -i id_rsa cactus@<target-IP> 
 ```
 
-I then used the serive and key to log in to the server.
+I then used the service and key to log in to the server.
 
 ![Screenshot (64)](https://github.com/user-attachments/assets/ddf28bd6-2a3b-40cc-9c64-d067e7b4a641)
 
