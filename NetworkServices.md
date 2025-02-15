@@ -84,8 +84,39 @@ I got to this directory by changing to the .ssh directory using the *cd .ssh* co
 
 Now I will be using all the information I gathered to work out the username of the account. Then, use the service and key to log-in to the server.
 
+Firstly, I had to download the id_rsa file into my local machine. I did that by using the command below:
+
+```bash
+smb: \> get .ssh/id_rsa id_rsa
+```
+I then used an exit command to return to my root directory.
+
+I used the *ls* command to see if the id_rsa file had downloaded successfully in my local machine and indeed it had.
+
+![Screenshot (61)](https://github.com/user-attachments/assets/100693d3-2a44-421d-af66-3c6630197d9c)
+
+I then used the *ls -la* command to look list the files in the root directory and their permissions. 
+
+![Screenshot (62)](https://github.com/user-attachments/assets/614e460f-f0e7-405d-bffd-c9c45c5e82e9)
 
 
+I however changed the id_rsa permissions to 600 using:
+
+```bash
+chmod 600 id_rsa
+```
+
+This changes the file permissions to allow only the owner to read and write the file. 600 ensures secure SSH key usage, preventing other users from reading or modifying it.
+
+After working out the username of the account, I entered the command below to direct me there. I then received a propt asking me if I was sure that I wanted to continue connection, said yes then I was in.
+
+```bash
+ssh -i id_rsa cactus@<target-IP> 
+```
+
+I then used the serive and key to log in to the server.
+
+![Screenshot (64)](https://github.com/user-attachments/assets/ddf28bd6-2a3b-40cc-9c64-d067e7b4a641)
 
 
 
