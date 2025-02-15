@@ -78,6 +78,11 @@ We can assume that this profile folder belongs to John Cactus. The ssh service h
 
 The .ssh directory has a directory that contains authentication keys that allow a user to authenticate themselves on, and access a server. Of these keys, the one that is most useful to us is: id_rsa
 
+I got to this directory by changing to the .ssh directory using the *cd .ssh* command directory then listed the contents in it using *ls*.
+
+![Screenshot (60)](https://github.com/user-attachments/assets/b82501fd-d32c-48c6-ad30-963f2b34515e)
+
+
 
 
 
