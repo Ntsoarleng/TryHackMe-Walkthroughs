@@ -120,4 +120,7 @@ I then used the service and key to log in to the server.
 
 
 
+## 🔌 3️⃣ **Enumerating Telnet** 
+
+
 
