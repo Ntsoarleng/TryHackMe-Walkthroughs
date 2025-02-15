@@ -82,6 +82,8 @@ I got to this directory by changing to the .ssh directory using the *cd .ssh* co
 
 ![Screenshot (60)](https://github.com/user-attachments/assets/b82501fd-d32c-48c6-ad30-963f2b34515e)
 
+Now I will be using all the information I gathered to work out the username of the account. Then, use the service and key to log-in to the server.
+
 
 
 
