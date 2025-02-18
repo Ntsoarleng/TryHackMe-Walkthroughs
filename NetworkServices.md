@@ -122,5 +122,17 @@ I then used the service and key to log in to the server.
 
 ## 🔌 3️⃣ **Enumerating Telnet** 
 
+Telnet is an application protocol which allows you, with the use of a telnet client, to connect to and execute commands on a remote machine that is hosting a telent server. The lack of encyption, means that all telnet communication is in plaintext thus making it very vulnerable to exploits.
 
+To enumerate, we will start out the same way we normally do, by doing a port scan, to find out as much information as we can about the services, applications, structure and operating system of the target machine.
+
+**Command used:**
+
+```bash
+nmap -p- --open <target-IP> 
+```
+
+**Findings:**
+1. There is one open port which is 8012/tcp.
+2. Upon re-running the scan to look for all open ports exlusinf " *-p-* ", I found that there's zero open ports. Here, we see that by assigning telnet to a non-standard port, it is not part of the common ports list, or top 1000 ports, that nmap scans. 
 
