@@ -134,5 +134,19 @@ nmap -p- --open <target-IP>
 
 **Findings:**
 1. There is one open port which is 8012/tcp.
-2. Upon re-running the scan to look for all open ports exlusinf " *-p-* ", I found that there's zero open ports. Here, we see that by assigning telnet to a non-standard port, it is not part of the common ports list, or top 1000 ports, that nmap scans. 
+2. Upon re-running the scan to look for all open ports exlusing " *-p-* ", I found that there's zero open ports. Here, we see that by assigning telnet to a non-standard port, it is not part of the common ports list, or top 1000 ports, that nmap scans.
+
+Next, I looked for a clue of what the port could be used for as well as the usenames.
+
+**Command used:**
+```bash
+nmap -sV -p 8012 <target-IP> 
+```
+
+**Findings:**
+![Screenshot (67)](https://github.com/user-attachments/assets/eb2ab632-6618-484d-8236-cff23c7c7b06)
+
+
+1. Based on the results and repeated title, I think the port could be used as a backdoor.
+2. This backdoor could belong to Skidy.
 
