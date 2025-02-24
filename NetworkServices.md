@@ -144,6 +144,7 @@ nmap -sV -p 8012 <target-IP>
 ```
 
 **Findings:**
+
 ![Screenshot (67)](https://github.com/user-attachments/assets/eb2ab632-6618-484d-8236-cff23c7c7b06)
 
 
