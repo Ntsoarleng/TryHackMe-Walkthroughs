@@ -136,7 +136,7 @@ nmap -p- --open <target-IP>
 1. There is one open port which is 8012/tcp.
 2. Upon re-running the scan to look for all open ports exlusing " *-p-* ", I found that there's zero open ports. Here, we see that by assigning telnet to a non-standard port, it is not part of the common ports list, or top 1000 ports, that nmap scans.
 
-Next, I looked for a clue of what the port could be used for as well as the usenames.
+Next, I looked for a clue of what the port could be used for as well as the possible usernames.
 
 **Command used:**
 ```bash
