@@ -153,3 +153,24 @@ nmap -sV -p 8012 <target-IP>
 
 
 ## 🔓 4️⃣ Exploiting Telnet: Breaking into the Shell  
+
+Using the information gathered from the enumeration stage, I will try accessing the telnet port, and using that as a foothold to get a full reverse shell on the machine. A reverse shell is a type of shell in which the target machine communicates back to the attacking machine.
+
+Firstly, I connected to the telnet port.
+
+**Command used:**
+```bash
+telnet <target-IP> 8012
+```
+
+**Findings:**
+1. It was an open telnet connection, and received a welcome message: SKIDY'S BACKDOOR.
+2. By trying to execute some commands, there was no return on any input entered into the telnet connection. Strange.
+
+Now, I resort to checking to see if what I was typing was being executed as a system command by starting a tcpdump listener on my machine.
+
+**Command used:**
+```bash
+sudo tcpdump ip proto \\icmp -i ens5
+```
+
