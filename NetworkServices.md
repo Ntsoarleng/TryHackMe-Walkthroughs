@@ -164,6 +164,10 @@ telnet <target-IP> 8012
 ```
 
 **Findings:**
+
+![Screenshot (68)](https://github.com/user-attachments/assets/06db79b7-09ef-474d-b84c-40b7eb7e9ec7) 
+
+
 1. It was an open telnet connection, and received a welcome message: SKIDY'S BACKDOOR.
 2. By trying to execute some commands, there was no return on any input entered into the telnet connection. Strange.
 
