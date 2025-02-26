@@ -151,3 +151,5 @@ nmap -sV -p 8012 <target-IP>
 1. Based on the results and repeated title, I think the port could be used as a backdoor.
 2. This backdoor could belong to Skidy.
 
+
+## 🔓 4️⃣ Exploiting Telnet: Breaking into the Shell  
