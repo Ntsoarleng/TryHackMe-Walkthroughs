@@ -246,6 +246,14 @@ The above command prompted for a username of which I gave as "anonymous". It the
 
 ![Screenshot (80)](https://github.com/user-attachments/assets/9eeb6363-8e5f-4032-88a0-eba781754e69)
 
+1. In the anonymous FTP directory, I found a file called PUBLIC_NOTICE.txt.
+2. I also found a pissible username: Mike.
+
+![Screenshot (84)](https://github.com/user-attachments/assets/ba2caa60-7886-4117-b088-6e817eddd3da)
+
+![Screenshot (83)](https://github.com/user-attachments/assets/52ca7dfa-9430-4655-9864-5d9f76617023)
+
+
 
 
 
