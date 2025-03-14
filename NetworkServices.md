@@ -203,4 +203,53 @@ nc -lvnp 4444
 
 ## 📂 5️⃣ Enumerating FTP
 
+Firstly, I will run an nmap scan to check for open ports.
+
+**Command used:**
+
+```bash
+nmap -p- --open <target-IP> 
+```
+
+**Findings:**
+1. There is only one open port - port 21/tcp running ftp.
+
+![Screenshot (78)](https://github.com/user-attachments/assets/90db0efd-677e-4e60-876e-840c6cd63efc)
+
+
+Next, I looked to see which variant of FTP is running on this open port.
+
+**Command used:**
+
+```bash
+nmap -sV -p 21 <target-IP> 
+```
+
+**Findings:**
+
+1. I found this variant to be vsftpd.
+
+![Screenshot (79)](https://github.com/user-attachments/assets/b7380c4d-6036-45af-8efc-148240d9a851)
+
+
+Now, I am going to check if I can login anonymously to the FTP server and without providing a password.
+
+**Command used:**
+
+```bash
+ftp <target-IP> 
+```
+
+The above command prompted for a username of which I gave as "anonymous". It then prompted for a password that I did not enter and viola, I was in!
+
+**Findings:**
+
+![Screenshot (80)](https://github.com/user-attachments/assets/9eeb6363-8e5f-4032-88a0-eba781754e69)
+
+
+
+
+
+
+
 
