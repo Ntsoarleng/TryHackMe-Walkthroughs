@@ -247,7 +247,7 @@ The above command prompted for a username of which I gave as "anonymous". It the
 ![Screenshot (80)](https://github.com/user-attachments/assets/9eeb6363-8e5f-4032-88a0-eba781754e69)
 
 1. In the anonymous FTP directory, I found a file called PUBLIC_NOTICE.txt.
-2. I also found a possible username: Mike.
+2. I also found a possible username: mike.
 
 ![Screenshot (84)](https://github.com/user-attachments/assets/ba2caa60-7886-4117-b088-6e817eddd3da)
 
@@ -256,7 +256,21 @@ The above command prompted for a username of which I gave as "anonymous". It the
 
 ## 🔥 6️⃣ Exploiting FTP
 
+When looking at an FTP server from the position we find ourselves in for this machine, an avenue we can exploit is weak or default password configurations.
+I will be using Hydra to bruteforce the password of the FTP server. Hydra is a very fast online password cracking tool, which can perform rapid dictionary attacks against more than 50 Protocols, including Telnet, RDP, SSH, FTP, HTTP, HTTPS, SMB, several databases and much more.
 
+**Command used:**
+
+```bash
+hydra -t 4 -l mike -P /usr/share/wordlists/rockyou.txt -vV <target-IP> ftp 
+```
+
+**Findings:**
+1. I found that the password that belongs to the username of mike is "password".
+
+![Screenshot (85)](https://github.com/user-attachments/assets/3c15d4ba-b676-4210-9ff1-9b07b8cd7fa8)
+
+Now that we know the password to the username of mike, I am going to connect to the FTP server as this user and enter the credentials as prompted.
 
 
 
