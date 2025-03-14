@@ -254,6 +254,7 @@ The above command prompted for a username of which I gave as "anonymous". It the
 ![Screenshot (83)](https://github.com/user-attachments/assets/52ca7dfa-9430-4655-9864-5d9f76617023)
 
 
+## 🔥 6️⃣ Exploiting FTP
 
 
 
