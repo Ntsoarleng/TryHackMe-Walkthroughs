@@ -272,7 +272,22 @@ hydra -t 4 -l mike -P /usr/share/wordlists/rockyou.txt -vV <target-IP> ftp
 
 Now that we know the password to the username of mike, I am going to connect to the FTP server as this user and enter the credentials as prompted.
 
+I went again and entered the following command:
 
+```bash
+ftp <target-IP>
+```
+When it propted for a name, I entered "mike". It then prompted for a password, then I entered "password".
 
+**Findings:**
 
+![Screenshot (113)](https://github.com/user-attachments/assets/42ddf507-6ddd-491e-8b83-b243dc1c699c)
+
+Now we want to see what the ftp.txt file is. Since ftp does not support the *cat* command, I downloaded the file using *get*, exited ftp using *bye* then inpected the file on my local machine using *cat*.
+
+**Findings:**
+
+![Screenshot (114)](https://github.com/user-attachments/assets/226669b3-1200-4db8-b565-9c1b8cc2e9a2)
+
+The ftp.txt file contained the ftp flag showing that I have exploited FTP successfully.
 
