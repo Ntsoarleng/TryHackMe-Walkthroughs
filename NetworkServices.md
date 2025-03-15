@@ -283,7 +283,7 @@ When it propted for a name, I entered "mike". It then prompted for a password, t
 
 ![Screenshot (113)](https://github.com/user-attachments/assets/42ddf507-6ddd-491e-8b83-b243dc1c699c)
 
-Now we want to see what the ftp.txt file is. Since ftp does not support the *cat* command, I downloaded the file using *get*, exited ftp using *bye* then inpected the file on my local machine using *cat*.
+Now we want to see what the ftp.txt file is. Since ftp does not support the *cat* command, I downloaded the file using *get*, exited ftp using *bye* then inspected the file on my local machine using *cat*.
 
 **Findings:**
 
