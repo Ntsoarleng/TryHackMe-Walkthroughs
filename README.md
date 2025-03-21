@@ -1,4 +1,4 @@
-# TryHackMe-Walkthroughs
+# TryHackMe-Walkthrough
 
 # Network Services Analysis 🔍
 
