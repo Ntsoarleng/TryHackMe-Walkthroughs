@@ -95,7 +95,7 @@ I used the *ls* command to see if the id_rsa file had downloaded successfully in
 
 ![Screenshot (61)](https://github.com/user-attachments/assets/100693d3-2a44-421d-af66-3c6630197d9c)
 
-I then used the *ls -la* command to look list the files in the root directory and their permissions. 
+I then used the *ls -la* command to list the files in the root directory and their permissions. 
 
 ![Screenshot (62)](https://github.com/user-attachments/assets/614e460f-f0e7-405d-bffd-c9c45c5e82e9)
 
