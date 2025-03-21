@@ -200,6 +200,7 @@ Now all we need to do is start a netcat listener on our local machine. We do thi
 ```bash
 nc -lvnp 4444
 ```
+After listening to this, I entered the command *whoami*, I received "root", I entered *pwd*, I received "/root", I entered *ls* then received a flag.txt file. I opened this file using the *cat flag.txt* command and received the flag file: THM{y0u_g0t_th3_fl4g}.
 
 ## 📂 5️⃣ Enumerating FTP
 
