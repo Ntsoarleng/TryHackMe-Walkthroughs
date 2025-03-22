@@ -1,4 +1,4 @@
-# TryHackMe Walkthrough: Network Services
+# Network Services
 
 📅 Date: 2025-03-21  
 🖥️ Category: Enumeration, Exploitation.  
