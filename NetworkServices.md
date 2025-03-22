@@ -4,7 +4,7 @@
 🖥️ Category: Enumeration, Exploitation.  
 🎯 Objective: Learn about, then enumerate and exploit a variety of network services and misconfigurations.
 
-## 🛠1️⃣ **Enumerating SMB**
+## 🛠1️⃣ **Enumerating Server Message Block (SMB)**
 ### 🔎 **Network Scanning**
 **Command used:**
 ```bash
@@ -200,7 +200,7 @@ nc -lvnp 4444
 ```
 After listening to this, I entered the command *whoami*, I received "root", I entered *pwd*, I received "/root", I entered *ls* then received a flag.txt file. I opened this file using the *cat flag.txt* command and received the flag file: THM{y0u_g0t_th3_t3ln3t_fl4g}.
 
-## 📂 5️⃣ Enumerating FTP
+## 📂 5️⃣ Enumerating File Transfer Protocol (FTP)
 
 Firstly, I will run an nmap scan to check for open ports.
 
