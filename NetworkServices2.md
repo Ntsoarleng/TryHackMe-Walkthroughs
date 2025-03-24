@@ -39,7 +39,21 @@ Now I used the command below to list the NFS shares
 
 1. The name of the visible share found is /home.
 
-Now we want to mount the share to our local machine. Firstly, I make create a directory that I will mount my share to using *mkdir/tmp/mount*. My client system needs a directory where all the content shared by the host server in the export folder can be accessed, and we have created this directory, it is called tmp.
+Now we want to mount the share to our local machine. Firstly, I make create a directory that I will mount my share to using *mkdir /tmp/mount*. My client system needs a directory where all the content shared by the host server in the export folder can be accessed, and we have created this directory, it is called tmp.
+
+I then mounted the NFS share to my local machine.
+
+**Command used:**
+```bash
+sudo mount -t nfs 10.10.10.71:/home /tmp/mount/ -nolock
+```
+I then changed directory to where I mounted this share.
+
+**Findings:**
+
+![Screenshot (145)](https://github.com/user-attachments/assets/00208cc0-df51-40aa-94cb-73b4320f10d2)
+
+1. The name of the folder inside this directory is cappucino.
 
 
 
