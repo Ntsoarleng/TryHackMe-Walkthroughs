@@ -10,3 +10,10 @@
 ## 🛠 1️⃣ Enumerating Network File System (NFS)  
 ### 🔎 **Scanning for Open Ports**  
 
+The first step of enumeration is to conduct a port scan to find out as much information as we can about the services, open ports and operating system of the target machine.
+
+I am going to search for open ports using an nmap scan.
+
+**Command used:**
+
+
