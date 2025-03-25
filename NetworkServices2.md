@@ -60,4 +60,4 @@ I then changed directory to where I mounted this share.
 I took a look insde this directory and looked at the files. It looks like we are inside a user's home directory.
 
 
-
+I did a bit of resesarch inside these folders and found that one folder, *.ssh*, could contain keys that would give us remote access to the server.
