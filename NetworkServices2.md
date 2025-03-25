@@ -65,3 +65,35 @@ I did a bit of resesarch inside these folders and found that one folder, *.ssh*,
 ![Screenshot (147)](https://github.com/user-attachments/assets/161d2868-ae4c-4d36-81cf-70a6fffaa6d9)
 
 Of these keys, the one that is most useful to us is the *id_rsa* one.
+
+I then copied this file to a different location (/root) on my local machine, and changed the permissions to 600.
+
+**Command used:**
+```bash
+cp id_rsa/root
+```
+```bash
+chmod 600 /root/id_rsa
+```
+I then listed the contents of the root directory to see if indeed the file was copied there and it was.
+
+![Screenshot (149)](https://github.com/user-attachments/assets/eb733f47-3be5-4ea2-8322-116709629625)
+
+I pretty much easily worked out the name of the user this key belongs to because recall how we got to this id_rsa file before. The private key was found in a directory structure like this:
+
+```bash
+/tmp/mount/cappucino/.ssh/id_rsa
+```
+Therefore, the username is the one that comes before /.ssh and that is cappucino.
+Thus I logged into the machine using the command below:
+
+```bash
+ssh -i id_rsa cappucino@<target-IP>
+```
+**Findings:**
+
+![Screenshot (150)](https://github.com/user-attachments/assets/bb86c071-4374-405a-9322-d45821c0e816)
+![Screenshot (152)](https://github.com/user-attachments/assets/8fc6a37d-f692-485a-85b8-bfd226825f53)
+
+I successfully logged into the machine!
+
