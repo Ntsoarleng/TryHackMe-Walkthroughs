@@ -61,3 +61,7 @@ I took a look insde this directory and looked at the files. It looks like we are
 
 
 I did a bit of resesarch inside these folders and found that one folder, *.ssh*, could contain keys that would give us remote access to the server.
+
+![Screenshot (147)](https://github.com/user-attachments/assets/161d2868-ae4c-4d36-81cf-70a6fffaa6d9)
+
+Of these keys, the one that is most useful to us is the *id_rsa* one.
