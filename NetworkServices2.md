@@ -55,5 +55,9 @@ I then changed directory to where I mounted this share.
 
 1. The name of the folder inside this directory is cappucino.
 
+![Screenshot (146)](https://github.com/user-attachments/assets/4d91018c-9aff-478f-8e0a-8c74180a7ee7)
+
+I took a look insde this directory and looked at the files. It looks like we are inside a user's home directory.
+
 
 
