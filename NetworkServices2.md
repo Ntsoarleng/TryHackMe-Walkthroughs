@@ -97,3 +97,34 @@ ssh -i id_rsa cappucino@<target-IP>
 
 I successfully logged into the machine!
 
+
+## 📤 3️⃣ Exploiting NFS
+
+To expoit the NFS share, I first have to change directory to the mount point on my machine, and then into the user's home directory. Remember we established that the user's username is cappucino.
+
+![Screenshot (153)](https://github.com/user-attachments/assets/416b021f-38e2-4fb8-aade-8d3091f68011)
+
+We're able to upload files to the NFS share, and control the permissions of these files. We can set the permissions of whatever we upload, in this case a bash shell executable. We can then log in through SSH, as we did in the previous task- and execute this executable to gain a root shell!
+
+To download the executable to my Downloads directory, I used the command below:
+
+**Command:**
+```bash
+scp -i key_name username@10.10.36.95:/bin/bash ~/Downloads/bash
+```
+I then used the below command to copy the bash executable to the NFS share. During the enumeration stage, we found the NFS share to be /home.
+```bash
+cp ~/Downloads/bash /home
+```
+The copied bash shell must be owned by the root user so I set this using:
+```bash
+sudo chown root /home/bash
+```
+
+**Findings:**
+
+![Screenshot (154)](https://github.com/user-attachments/assets/e7bbe6ad-e8a9-4108-936c-6fb640b20d5e)
+
+Lastly, as the screenshot above shows, I had to verify ownership by listing the contents in the /home/bash directory and indeed the bash shell is owned by a root user.
+
+
