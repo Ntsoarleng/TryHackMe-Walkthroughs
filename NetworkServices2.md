@@ -128,3 +128,7 @@ sudo chown root /home/bash
 Lastly, as the screenshot above shows, I had to verify ownership by listing the contents in the /home/bash directory and indeed the bash shell is owned by a root user.
 
 
+Now, we're going to add the SUID bit permission to the bash executable we just copied to the share using *sudo chmod +s bash*. And after setting these permissions I used *ls -la /home/bash* to check the permissions of the bash executable. The permissions were successfully set.
+
+![Screenshot (155)](https://github.com/user-attachments/assets/f35b5a4c-3456-49f0-9d7d-fd0b6e3a76b2)
+
