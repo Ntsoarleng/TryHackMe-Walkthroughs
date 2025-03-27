@@ -105,6 +105,7 @@ To expoit the NFS share, I first have to change directory to the mount point on 
 ![Screenshot (153)](https://github.com/user-attachments/assets/416b021f-38e2-4fb8-aade-8d3091f68011)
 
 We're able to upload files to the NFS share, and control the permissions of these files. We can set the permissions of whatever we upload, in this case a bash shell executable. We can then log in through SSH, as we did in the previous task- and execute this executable to gain a root shell!
+I changed directory to *.ssh* as I was still here because this is where we find the *id_rsa* key.
 
 To download the executable to my Downloads directory, I used the command below:
 
