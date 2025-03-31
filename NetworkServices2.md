@@ -133,3 +133,38 @@ Now, we're going to add the SUID bit permission to the bash executable we just c
 
 ![Screenshot (155)](https://github.com/user-attachments/assets/f35b5a4c-3456-49f0-9d7d-fd0b6e3a76b2)
 
+
+## 📡 4️⃣ Enumerating SMTP
+
+Poorly configured or vulnerable mail servers can often provide an initial foothold into a network.  We're going to use the "smtp_version" module in MetaSploit to do this.
+First, we'll run a port scan to search for open ports.
+
+**Command used:**
+```bash
+nmap -p- --opne <target-IP>
+```
+
+**Findings:**
+
+![Screenshot (209)](https://github.com/user-attachments/assets/cca9b13a-f0f2-4d31-8dc0-dce7a0ea9898)
+
+SMTP is running on port 25.
+
+Now that we know which port we will be targeting, we will start up Metasploit.
+**Command used:**
+```bash
+msfconsole
+```
+I then searched for the smtp_version using the command below:
+
+```bash
+search smtp_version
+```
+
+**Findings:**
+
+![Screenshot (210)](https://github.com/user-attachments/assets/fd104917-6e38-4e85-a6a6-45caf5be8371)
+
+The smtp_version's full module name is auxiliary/scanner/smtp/smtp_version
+
+
