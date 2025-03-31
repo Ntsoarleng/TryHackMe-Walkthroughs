@@ -1,4 +1,4 @@
-# Network Services 2  
+![image](https://github.com/user-attachments/assets/cdd42a7f-7ed2-4ada-9a3c-b395268c14fa)# Network Services 2  
 🔍 **Enumerating and Exploiting More Common Network Services & Misconfigurations**  
 
 📅 **Date:** 2025-03-22
@@ -166,5 +166,33 @@ search smtp_version
 ![Screenshot (210)](https://github.com/user-attachments/assets/fd104917-6e38-4e85-a6a6-45caf5be8371)
 
 The smtp_version's full module name is auxiliary/scanner/smtp/smtp_version
+
+Now, we will select the module and show its options.
+
+**Command used:**
+
+```bash
+use auxilliary/scanner/smtp/smtp_version
+```
+And 
+
+```bash
+show options
+```
+![Screenshot (212)](https://github.com/user-attachments/assets/2c3118ac-1450-47e5-aafe-2f3ccb29a2af)
+
+We need to set the RHOSTS option as it is the most important for SMTP enumeration.
+I will set it to the correct value of the target machine using the below command. Once set, run using the *run* command.
+
+**Command used:**
+```bash
+set RHOSTS <taget-IP>
+```
+**Findings:**
+
+![Screenshot (214)](https://github.com/user-attachments/assets/d5e4238c-4284-4ead-bc57-477a7e365cfb)
+
+The system mail name is polosmtp.home
+
 
 
