@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/cdd42a7f-7ed2-4ada-9a3c-b395268c14fa)# Network Services 2  
+# Network Services 2  
 🔍 **Enumerating and Exploiting More Common Network Services & Misconfigurations**  
 
 📅 **Date:** 2025-03-22
