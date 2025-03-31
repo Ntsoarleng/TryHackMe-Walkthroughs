@@ -134,7 +134,7 @@ Now, we're going to add the SUID bit permission to the bash executable we just c
 ![Screenshot (155)](https://github.com/user-attachments/assets/f35b5a4c-3456-49f0-9d7d-fd0b6e3a76b2)
 
 
-## 📡 4️⃣ Enumerating SMTP
+## 📡 4️⃣ Enumerating Simple Mail Tranfer Protocol (SMTP)
 
 Poorly configured or vulnerable mail servers can often provide an initial foothold into a network.  We're going to use the "smtp_version" module in MetaSploit to do this.
 First, we'll run a port scan to search for open ports.
