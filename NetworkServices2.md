@@ -196,6 +196,29 @@ set RHOSTS <taget-IP>
 2. The Mail Tranfer Agent (MTA) that is running the SMTP server is Postfix.
 
 
+We've now got a good amount of information on the target system to move onto the next stage. Now we search for the module "smtp_enum".
+
+**Command used:**
+```bash
+search smtp_enum
+```
+
+**Findings:**
+
+![Screenshot (215)](https://github.com/user-attachments/assets/fc4150fd-6a9f-4251-aa2f-48894a329315)
+
+Its full module name is auxiliary/scanner/smtp/smtp_enum.
+
+
+We're going to be using the "top-usernames-shortlist.txt" wordlist from the Usernames subsection of seclists (/usr/share/wordlists/SecLists/Usernames). When one is using an SMTP enumeration module in Metasploit (like smtp_enum), and wants to provide a custom wordlist, they'll need to set the USER_FILE option to the path of that wordlist. Once we have set this option, another essential parameter we have to set is RHOSTS, I set it before I set the option as the below screenshot shows. RHOSTS is crucial because *smtp_enum* needs to know which host(s) to scan.
+
+![Screenshot (216)](https://github.com/user-attachments/assets/0a3578fc-ca2b-4d01-94aa-f4b29433b7fa)
+
+Now, we run the exploit using *run*.
+
+
+
+
 
 
 
