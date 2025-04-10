@@ -218,6 +218,9 @@ Now, we run the exploit using *run*.
 
 
 
+![Screenshot (217)](https://github.com/user-attachments/assets/6164771a-ef0a-42a7-80c3-cc34ffa4fd01)
+
+The username returned to us is *administrator*.
 
 
 
