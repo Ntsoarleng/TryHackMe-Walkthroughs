@@ -225,4 +225,11 @@ The username returned to us is *administrator*.
 
 ## ✉️ 5️⃣ Exploiting SMTP
 
+Okay, at the end of our Enumeration section we have a few vital pieces of information:
+
+1. A user account name
+2. The type of SMTP server and Operating System running.
+
+We know from our port scan, that the only other open port on this machine is an SSH login. We're going to use this information to try and bruteforce the password of the SSH login for our user using Hydra.
+
 
