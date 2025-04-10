@@ -192,7 +192,10 @@ set RHOSTS <taget-IP>
 
 ![Screenshot (214)](https://github.com/user-attachments/assets/d5e4238c-4284-4ead-bc57-477a7e365cfb)
 
-The system mail name is polosmtp.home
+1. The system mail name is polosmtp.home.
+2. The Mail Tranfer Agent (MTA) that is running the SMTP server is Postfix.
+
+
 
 
 
