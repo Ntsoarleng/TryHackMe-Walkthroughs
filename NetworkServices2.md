@@ -256,6 +256,6 @@ Once I was in, I typed the *ls* command to view what was in the current director
 
 ![Screenshot (219)](https://github.com/user-attachments/assets/9da80776-ecf0-48a6-b9b9-c6137107e267)
 
-
+The contents of smtp.txt file are: THM{who_knew_email_servers_were_c00l?}.
 
 
