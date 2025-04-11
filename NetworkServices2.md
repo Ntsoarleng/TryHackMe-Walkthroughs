@@ -232,4 +232,30 @@ Okay, at the end of our Enumeration section we have a few vital pieces of inform
 
 We know from our port scan, that the only other open port on this machine is an SSH login. We're going to use this information to try and bruteforce the password of the SSH login for our user using Hydra.
 
+**Command used:**
+```bash
+hydra -t 16 -l administrator -P /usr/share/wordlists/rockyou.txt -vV 10.10.30.206 ssh
+```
+
+**Findings:**
+
+![Screenshot (218)](https://github.com/user-attachments/assets/d685ff74-c40a-476f-a189-a5fe30fb5125)
+
+1. The password of the user (administrator) is alejandro.
+
+Now, we will SSH into the server as the user to look at the contents of the smtp.txt file.
+
+**Command used:**
+
+```bash
+ssh administrator@<target-IP>
+```
+Once I was in, I typed the *ls* command to view what was in the current directory. I did find the *smtp.txt* file, then viewed its contents by using the *cat* command.
+
+**Findings:**
+
+![Screenshot (219)](https://github.com/user-attachments/assets/9da80776-ecf0-48a6-b9b9-c6137107e267)
+
+
+
 
