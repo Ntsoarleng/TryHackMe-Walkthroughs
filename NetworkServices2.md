@@ -250,6 +250,7 @@ Now, we will SSH into the server as the user to look at the contents of the smtp
 ```bash
 ssh administrator@<target-IP>
 ```
+
 Once I was in, I typed the *ls* command to view what was in the current directory. I did find the *smtp.txt* file, then viewed its contents by using the *cat* command.
 
 **Findings:**
@@ -259,4 +260,30 @@ Once I was in, I typed the *ls* command to view what was in the current director
 The contents of smtp.txt file are: THM{who_knew_email_servers_were_c00l?}.
 
 ## 🧮 6️⃣ Enumerating Structured Query Language (SQL) 
+
+As this room focuses on exploiting and enumerating the network service, for the sake of the scenario, we're going to assume that I found the *credentials: "root:password"* while enumerating subdomains of a web server. 
+
+As always, we will start by doing a port scan, so we know what port the service we're trying to attack is running on.
+
+**Command used:**
+
+```bash
+nmap -p- --open <target-ip>
+```
+
+**Findings:**
+
+![Screenshot (221)](https://github.com/user-attachments/assets/0319d94f-c744-4628-800f-6123d8a903de)
+
+1. MySQL is using the 3306 port.
+
+So, since we thing that we have a set of credentials, we will double check that by manually connecting to the MySQL server.
+
+**Command used:**
+
+```bash
+mysql -h <target-ip> -u 
+```
+
+
 
