@@ -258,4 +258,5 @@ Once I was in, I typed the *ls* command to view what was in the current director
 
 The contents of smtp.txt file are: THM{who_knew_email_servers_were_c00l?}.
 
+## 🧮 6️⃣ Enumerating Structured Query Language (SQL) 
 
