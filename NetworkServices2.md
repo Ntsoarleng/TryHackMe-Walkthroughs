@@ -259,7 +259,7 @@ Once I was in, I typed the *ls* command to view what was in the current director
 
 The contents of smtp.txt file are: THM{who_knew_email_servers_were_c00l?}.
 
-## 🧮 6️⃣ Enumerating Structured Query Language (SQL) 
+## 🧮 6️⃣ Enumerating My Structured Query Language (MySQL) 
 
 As this room focuses on exploiting and enumerating the network service, for the sake of the scenario, we're going to assume that I found the *credentials: "root:password"* while enumerating subdomains of a web server. 
 
@@ -306,4 +306,24 @@ show options
 ![Screenshot (272)](https://github.com/user-attachments/assets/61480913-65d3-4831-b31c-c2b85490b420)
 
 The three options that we need to set (in descending order) are: PASSWORD/RHOSTS/USERNAME
+
+![screenshot(273)(1)](https://github.com/user-attachments/assets/34dfa9b8-c98a-48fc-b367-2aba28ea1dad)
+
+I then ran the exploit.
+
+**Findings:**
+
+![Screenshot (273)](https://github.com/user-attachments/assets/4ce824cf-2639-47bb-ace2-e38c4e3a5437)
+
+By default, it tests with the "select version()" command and the result it gave me was: 5.7.29-0ubuntu0.18.04.1.
+
+Now that we know the exploit is landing as planned, I will try to gain some more ambitious information. I changed the "sql" option to "show databases" and ran it.
+
+![Screenshot (274)](https://github.com/user-attachments/assets/63cb90c0-0994-4617-be33-5ef47a5f5e17)
+
+Four databases were returned.
+
+## 🛠️ 7️⃣ Exploiting MySQL 
+
+
 
