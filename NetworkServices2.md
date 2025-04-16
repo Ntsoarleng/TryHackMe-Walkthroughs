@@ -277,13 +277,33 @@ nmap -p- --open <target-ip>
 
 1. MySQL is using the 3306 port.
 
-So, since we thing that we have a set of credentials, we will double check that by manually connecting to the MySQL server.
+Now, I will launch up Metasploit using the *msfconsole* command and will be using the mysql_sql module.
 
-**Command used:**
+I searched for, selected and listed the options it needs.
+
+**Command used for searching:**
 
 ```bash
-mysql -h <target-ip> -u 
+search mysql_sql
 ```
 
+**Command used for selection and listing options:**
 
+```bash
+use auxiliary/admin/mysql/mysql_sql
+```
+
+AND
+
+```bash
+show options
+```
+
+**Findings:**
+
+![Screenshot (271)](https://github.com/user-attachments/assets/fda1311f-8c1d-4d9a-9ced-f59a86719ca1)
+
+![Screenshot (272)](https://github.com/user-attachments/assets/61480913-65d3-4831-b31c-c2b85490b420)
+
+The three options that we need to set (in descending order) are: PASSWORD/RHOSTS/USERNAME
 
