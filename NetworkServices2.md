@@ -326,4 +326,15 @@ Four databases were returned.
 ## 🛠️ 7️⃣ Exploiting MySQL 
 
 
+The data we are going to be extracting are password hashes which are simply a way of storing passwords not in plaintext format.
+
+First, I will search for and select the "mysql_schemadump" module.
+
+![Screenshot (336)](https://github.com/user-attachments/assets/5048dbf0-a703-47f3-979d-70bea2a95324)
+
+The module's full name is auxiliary/scanner/mysql/mysql_schemadump.
+
+Now, I will move on to set the relevant options, and run the exploit.
+
+
 
