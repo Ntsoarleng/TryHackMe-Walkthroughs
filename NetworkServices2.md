@@ -360,8 +360,35 @@ run
 
 ![Screenshot (337)](https://github.com/user-attachments/assets/b122ed04-4afc-443e-98ff-0cc937cd6193)
 
-Several tables were returned of which the last one's name was *x$waits_global_by_latency*
+Several tables were returned of which the last one's name was *x$waits_global_by_latency*.
 
+I have now dumped the tables, the column names of the whole database. But I can do better - search for and select the "mysql_hashdump" module.
+
+![Screenshot (338)](https://github.com/user-attachments/assets/022ca50f-aafc-4d32-99b1-2a827fc7ebe1)
+
+The module's full name is *auxiliary/scanner/mysql/mysql_hashdump*.
+
+Again, I will set the options like I did previously and run the exploit.
+
+**Findings:**
+
+![Screenshot (339)](https://github.com/user-attachments/assets/c2cb25c5-1307-418e-947c-ab73d9ae4dd5)
+
+The non-default user that stands out is *carl* and we have their password hash. Their hash string in full is carl:*EA031893AA21444B170FC2162A56978B8CEECE18.
+
+Now we need to crack the password. We will try John the Ripper against it using: *john hash.txt*.
+I first had to create the file *hash.txt* using nano, then copied carl's full hash in the file.
+
+```bash
+nano hash.txt
+```
+After saving this nano script, I then ran *john hash.txt*.
+
+**Findings:**
+
+![Screenshot (340)](https://github.com/user-attachments/assets/855b066a-e9de-409c-9cac-54d0779c19fb)
+
+Carl's password is doggie.
 
 
 
