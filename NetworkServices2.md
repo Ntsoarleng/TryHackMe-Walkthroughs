@@ -391,5 +391,21 @@ After saving this nano script, I then ran *john hash.txt*.
 Carl's password is doggie.
 
 
+Now with all this information at hand, I want to check if carl resused this password in other services. One way I checked for this is by logging into the *ssh* service using their credentials.
+
+**Command used:**
+
+```bash
+ssh carl@<target-IP>
+```
+
+**Findings:**
+
+![Screenshot (351)](https://github.com/user-attachments/assets/cf86bc1c-625f-4e14-8243-ecc17182304a)
+
+I was able to log into this service using the *doggie* password. I wanted to see what was in it using the *ls* command and I found the "MySQL.txt" file that I also looked into. I found the flag!
+
+![Screenshot (352)](https://github.com/user-attachments/assets/e81bd38b-dd30-4939-8f85-2e815b191ae7)
+
 
 
