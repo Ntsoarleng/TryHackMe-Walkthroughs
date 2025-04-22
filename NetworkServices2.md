@@ -149,7 +149,7 @@ cat root.txt
 
 ![Screenshot (353)](https://github.com/user-attachments/assets/b96f4618-4e03-4192-a98b-22aaec2bd80c)
 
-root.txt retturned the flag above.
+root.txt returned the flag above.
 
 
 
