@@ -34,3 +34,18 @@ The following tools and methodologies were used for enumeration, service analysi
 
 ## 🌍 TryHackMe Room
 This project is based on the **TryHackMe** room: [Network Services](https://tryhackme.com/room/networkservices).  
+
+
+### 📘 Network Services 2 – More Common Services & Misconfigurations
+
+This walkthrough explores additional vulnerable network services beyond those in Network Services 1. I focused on enumerating and exploiting services like **NFS**, **SMTP**, and **SQL**, showcasing how common misconfigurations can lead to serious security risks.
+
+🔍 **Key skills demonstrated:**
+- Enumerating and mounting NFS shares  
+- Probing SMTP with VRFY/EXPN for user discovery  
+- Crafting and sending spoofed emails via SMTP  
+- Enumerating and exploiting SQL vulnerabilities  
+
+📂 Full walkthrough: [`Network Services 2`](./NetworkServices2.md)
+## 🌍 TryHackMe Room
+This project is based on the **TryHackMe** room: [Network Services 2](https://tryhackme.com/room/networkservices2).  
