@@ -49,3 +49,12 @@ This walkthrough explores additional vulnerable network services beyond those in
 📂 Full walkthrough: [`Network Services 2`](./NetworkServices2.md)
 ## 🌍 TryHackMe Room
 This project is based on the **TryHackMe** room: [Network Services 2](https://tryhackme.com/room/networkservices2).  
+
+---
+
+🙋‍♀️ Author: Made by Ntsoareleng
+
+📅 Year: 2025
+
+🌱 Learning Python, cybersecurity, and cloud — one project at a time!
+
