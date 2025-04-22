@@ -133,6 +133,25 @@ Now, we're going to add the SUID bit permission to the bash executable we just c
 
 ![Screenshot (155)](https://github.com/user-attachments/assets/f35b5a4c-3456-49f0-9d7d-fd0b6e3a76b2)
 
+I then ran the bash executable, changed to the /root directory, listed what was in it and ran the root.txt file. Note that upon running the *whoami* command, I received root as the output.
+
+**Commands used:**
+
+```bash
+./bash -p
+whoami
+cd /root
+ls (returned root.txt)
+cat root.txt
+```
+
+**Findings:**
+
+![Screenshot (353)](https://github.com/user-attachments/assets/b96f4618-4e03-4192-a98b-22aaec2bd80c)
+
+root.txt retturned the flag above.
+
+
 
 ## 📡 4️⃣ Enumerating Simple Mail Tranfer Protocol (SMTP)
 
